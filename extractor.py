@@ -21,7 +21,7 @@ def find_inc_codes(filename):
     return matches
 
 # Example usage
-filename = r'C:\Users\Jag\Desktop\cristina.txt'  # Correct file path
+filename = r'C:\Users\Jag\Desktop\peter.txt'  # Correct file path
 matches = find_inc_codes(filename)
 
 # Print the matches and their count
