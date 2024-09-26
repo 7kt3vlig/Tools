@@ -7,17 +7,21 @@ def find_inc_codes(filename):
     # Initialize an empty list to store matches
     matches = []
 
-    # Open the file and read its content
-    with open(filename, 'r') as file:
-        text = file.read()
+    # Open the file and read its content with the correct encoding
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            text = file.read()
 
-        # Find all occurrences of the pattern in the text
-        matches = re.findall(pattern, text)
+            # Find all occurrences of the pattern in the text
+            matches = re.findall(pattern, text)
+    except UnicodeDecodeError as e:
+        print(f"Error decoding the file: {e}")
+        return []
 
     return matches
 
 # Example usage
-filename = r'C:\Users\Jag\Desktop\cases.txt'  # Correct file path
+filename = r'C:\Users\Jag\Desktop\cristina.txt'  # Correct file path
 matches = find_inc_codes(filename)
 
 # Print the matches and their count

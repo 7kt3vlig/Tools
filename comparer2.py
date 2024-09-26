@@ -32,7 +32,7 @@ def find_duplicates(list1):
     return list(duplicates)
 
 # Example usage
-filename = r'C:\Users\Jag\Desktop\cases2.txt'  # File path
+filename = r'C:\Users\Jag\Desktop\cristina2.txt'  # File path
 
 # Find all 'INCxxxxxxx' codes in the file
 matches = find_inc_codes(filename)
