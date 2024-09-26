@@ -22,7 +22,7 @@ def count_tea_breaks_in_folder(folder_path):
     print(f"\nTotal count of 'Aux - Tea Break' in all files: {total_count}")
 
 # Path to the folder containing your CSV files
-folder_path = r'C:\Users\Jag\Desktop\Cristina2023'
+folder_path = r'C:\Users\Jag\Desktop\peter2023'
   # Replace with the actual path to your folder
 
 # Call the function
